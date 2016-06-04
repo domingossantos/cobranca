@@ -1,0 +1,197 @@
+2016-06-01 01:39:06 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cobranca.bancos' doesn't exist
+Request URL: /bancos-contas
+Referer URL: http://localhost:8765/empresas
+Stack Trace:
+#0 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'bancos', Array, Object(Cake\Database\Schema\Table))
+#1 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(64): Cake\Database\Schema\Collection->describe('bancos', Array)
+#2 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/ORM/Table.php(430): Cake\Database\Schema\CachedCollection->describe('bancos')
+#3 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/ORM/Table.php(506): Cake\ORM\Table->schema()
+#4 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(371): Cake\ORM\Table->primaryKey()
+#5 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(349): Cake\ORM\Query->_addAssociationsToTypeMap(Object(App\Model\Table\BancosContasTable), Object(Cake\Database\TypeMap), Array)
+#6 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(673): Cake\ORM\Query->contain(Array)
+#7 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/ORM/Table.php(1806): Cake\ORM\Query->applyOptions(Array)
+#8 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/ORM/Table.php(948): Cake\ORM\Table->callFinder('all', Object(Cake\ORM\Query), Array)
+#9 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#10 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\BancosContasTable), Array)
+#11 /Users/domingossantos/www/cobranca/src/Controller/BancosContasController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\BancosContasTable))
+#12 [internal function]: App\Controller\BancosContasController->index()
+#13 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#14 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#15 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BancosContasController))
+#16 /Users/domingossantos/www/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 {main}
+
+
+2016-06-01 01:49:22 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Contratos.json could not be found.
+Exception Attributes: array (
+  'class' => 'Contratos.json',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /contratos.json
+Stack Trace:
+#0 /Users/domingossantos/www/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-06-01 01:52:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Bancos.json could not be found.
+Exception Attributes: array (
+  'class' => 'Bancos.json',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /bancos.json
+Stack Trace:
+#0 /Users/domingossantos/www/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-06-01 13:30:05 Error: [Cake\View\Exception\MissingTemplateException] Template file "Usuarios/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Usuarios/login.ctp',
+)
+Request URL: /usuarios/login
+Stack Trace:
+#0 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsuariosController))
+#4 /Users/domingossantos/www/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-06-01 13:30:32 Error: Fatal Error (1): Call to a member function allow() on boolean in [/Users/domingossantos/www/cobranca/src/Controller/AppController.php, line 64]
+Request URL: /usuarios/login
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-06-01 13:30:32 Error: [Cake\Error\FatalErrorException] Call to a member function allow() on boolean
+Request URL: /usuarios/login
+Stack Trace:
+#0 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Users/domingos...', 64)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-06-01 13:30:42 Error: [Cake\View\Exception\MissingTemplateException] Template file "Usuarios/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Usuarios/login.ctp',
+)
+Request URL: /usuarios/login
+Stack Trace:
+#0 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsuariosController))
+#4 /Users/domingossantos/www/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-06-01 13:31:10 Error: [Cake\Controller\Exception\MissingActionException] Action UsuariosController::login() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /usuarios/login
+Stack Trace:
+#0 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsuariosController))
+#2 /Users/domingossantos/www/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-06-01 13:34:11 Error: [Cake\View\Exception\MissingTemplateException] Template file "Usuarios/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Usuarios/login.ctp',
+)
+Request URL: /usuarios/login
+Referer URL: http://localhost:8765/usuarios/edit/1
+Stack Trace:
+#0 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsuariosController))
+#4 /Users/domingossantos/www/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-06-01 13:34:45 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cobranca.users' doesn't exist
+Request URL: /usuarios/login
+Referer URL: http://localhost:8765/usuarios/login
+Stack Trace:
+#0 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'users', Array, Object(Cake\Database\Schema\Table))
+#1 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(64): Cake\Database\Schema\Collection->describe('users', Array)
+#2 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/ORM/Table.php(430): Cake\Database\Schema\CachedCollection->describe('users')
+#3 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(211): Cake\ORM\Table->schema()
+#4 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#5 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/ORM/Table.php(1243): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#6 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/ORM/Table.php(946): Cake\ORM\Table->query()
+#7 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Auth/BaseAuthenticate.php(160): Cake\ORM\Table->find('all', Array)
+#8 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Auth/BaseAuthenticate.php(108): Cake\Auth\BaseAuthenticate->_query('usuario@empresa...')
+#9 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Auth/FormAuthenticate.php(77): Cake\Auth\BaseAuthenticate->_findUser('usuario@empresa...', '12345')
+#10 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php(769): Cake\Auth\FormAuthenticate->authenticate(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 /Users/domingossantos/www/cobranca/src/Controller/UsuariosController.php(117): Cake\Controller\Component\AuthComponent->identify()
+#12 [internal function]: App\Controller\UsuariosController->login()
+#13 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#14 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#15 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsuariosController))
+#16 /Users/domingossantos/www/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 {main}
+
+
+2016-06-01 13:35:26 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cobranca.users' doesn't exist
+Request URL: /usuarios/login
+Referer URL: http://localhost:8765/usuarios/login
+Stack Trace:
+#0 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'users', Array, Object(Cake\Database\Schema\Table))
+#1 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(64): Cake\Database\Schema\Collection->describe('users', Array)
+#2 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/ORM/Table.php(430): Cake\Database\Schema\CachedCollection->describe('users')
+#3 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(211): Cake\ORM\Table->schema()
+#4 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#5 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/ORM/Table.php(1243): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#6 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/ORM/Table.php(946): Cake\ORM\Table->query()
+#7 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Auth/BaseAuthenticate.php(160): Cake\ORM\Table->find('all', Array)
+#8 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Auth/BaseAuthenticate.php(108): Cake\Auth\BaseAuthenticate->_query('usuario@empresa...')
+#9 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Auth/FormAuthenticate.php(77): Cake\Auth\BaseAuthenticate->_findUser('usuario@empresa...', '12345')
+#10 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php(769): Cake\Auth\FormAuthenticate->authenticate(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 /Users/domingossantos/www/cobranca/src/Controller/UsuariosController.php(117): Cake\Controller\Component\AuthComponent->identify()
+#12 [internal function]: App\Controller\UsuariosController->login()
+#13 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#14 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#15 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsuariosController))
+#16 /Users/domingossantos/www/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 {main}
+
+
+2016-06-01 13:35:36 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cobranca.users' doesn't exist
+Request URL: /usuarios/login
+Referer URL: http://localhost:8765/usuarios/login
+Stack Trace:
+#0 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'users', Array, Object(Cake\Database\Schema\Table))
+#1 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(64): Cake\Database\Schema\Collection->describe('users', Array)
+#2 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/ORM/Table.php(430): Cake\Database\Schema\CachedCollection->describe('users')
+#3 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(211): Cake\ORM\Table->schema()
+#4 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#5 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/ORM/Table.php(1243): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#6 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/ORM/Table.php(946): Cake\ORM\Table->query()
+#7 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Auth/BaseAuthenticate.php(160): Cake\ORM\Table->find('all', Array)
+#8 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Auth/BaseAuthenticate.php(108): Cake\Auth\BaseAuthenticate->_query('usuario@empresa...')
+#9 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Auth/FormAuthenticate.php(77): Cake\Auth\BaseAuthenticate->_findUser('usuario@empresa...', '12345')
+#10 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php(769): Cake\Auth\FormAuthenticate->authenticate(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 /Users/domingossantos/www/cobranca/src/Controller/UsuariosController.php(117): Cake\Controller\Component\AuthComponent->identify()
+#12 [internal function]: App\Controller\UsuariosController->login()
+#13 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#14 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#15 /Users/domingossantos/www/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsuariosController))
+#16 /Users/domingossantos/www/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 {main}
+
+
