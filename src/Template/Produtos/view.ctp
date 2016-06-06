@@ -28,15 +28,19 @@
         </tr>
         <tr>
             <th><?= __('Empresa') ?></th>
-            <td><?= $produto->has('empresa') ? $this->Html->link($produto->empresa->id, ['controller' => 'Empresas', 'action' => 'view', $produto->empresa->id]) : '' ?></td>
+            <td><?= $produto->has('empresa') ? $this->Html->link($produto->empresa->nome_fantasia, ['controller' => 'Empresas', 'action' => 'view', $produto->empresa->id]) : '' ?></td>
         </tr>
         <tr>
             <th><?= __('Id') ?></th>
             <td><?= $this->Number->format($produto->id) ?></td>
         </tr>
         <tr>
-            <th><?= __('Data Cadastro') ?></th>
-            <td><?= h($produto->data_cadastro) ?></td>
+            <th><?= __('Created') ?></th>
+            <td><?= h($produto->created) ?></td>
+        </tr>
+        <tr>
+            <th><?= __('Modified') ?></th>
+            <td><?= h($produto->modified) ?></td>
         </tr>
     </table>
     <div class="related">
@@ -47,13 +51,13 @@
                 <th><?= __('Id') ?></th>
                 <th><?= __('Nome') ?></th>
                 <th><?= __('Path Arquivo') ?></th>
-                <th><?= __('Data Cadastro') ?></th>
-                <th><?= __('Status') ?></th>
                 <th><?= __('Produto Id') ?></th>
                 <th><?= __('Valor Total') ?></th>
                 <th><?= __('Valor Parcela') ?></th>
                 <th><?= __('Valor Mora') ?></th>
                 <th><?= __('Percentual Juros') ?></th>
+                <th><?= __('Created') ?></th>
+                <th><?= __('Modified') ?></th>
                 <th class="actions"><?= __('Actions') ?></th>
             </tr>
             <?php foreach ($produto->contratos as $contratos): ?>
@@ -61,13 +65,13 @@
                 <td><?= h($contratos->id) ?></td>
                 <td><?= h($contratos->nome) ?></td>
                 <td><?= h($contratos->path_arquivo) ?></td>
-                <td><?= h($contratos->data_cadastro) ?></td>
-                <td><?= h($contratos->status) ?></td>
                 <td><?= h($contratos->produto_id) ?></td>
                 <td><?= h($contratos->valor_total) ?></td>
                 <td><?= h($contratos->valor_parcela) ?></td>
                 <td><?= h($contratos->valor_mora) ?></td>
                 <td><?= h($contratos->percentual_juros) ?></td>
+                <td><?= h($contratos->created) ?></td>
+                <td><?= h($contratos->modified) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['controller' => 'Contratos', 'action' => 'view', $contratos->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['controller' => 'Contratos', 'action' => 'edit', $contratos->id]) ?>

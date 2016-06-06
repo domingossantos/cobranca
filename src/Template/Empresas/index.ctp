@@ -8,8 +8,8 @@
         <li><?= $this->Html->link(__('New Cliente'), ['controller' => 'Clientes', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Produtos'), ['controller' => 'Produtos', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Produto'), ['controller' => 'Produtos', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Usuarios'), ['controller' => 'Usuarios', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Usuario'), ['controller' => 'Usuarios', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="empresas index large-9 medium-8 columns content">
@@ -25,8 +25,9 @@
                 <th><?= $this->Paginator->sort('site') ?></th>
                 <th><?= $this->Paginator->sort('fone') ?></th>
                 <th><?= $this->Paginator->sort('email') ?></th>
-                <th><?= $this->Paginator->sort('data_cadastro') ?></th>
                 <th><?= $this->Paginator->sort('status') ?></th>
+                <th><?= $this->Paginator->sort('created') ?></th>
+                <th><?= $this->Paginator->sort('modified') ?></th>
                 <th class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
@@ -41,8 +42,9 @@
                 <td><?= h($empresa->site) ?></td>
                 <td><?= h($empresa->fone) ?></td>
                 <td><?= h($empresa->email) ?></td>
-                <td><?= h($empresa->data_cadastro) ?></td>
                 <td><?= h($empresa->status) ?></td>
+                <td><?= h($empresa->created) ?></td>
+                <td><?= h($empresa->modified) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $empresa->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $empresa->id]) ?>

@@ -1,0 +1,4 @@
+Actions "Menu"
+View "Ver"
+Edit "Editar"
+Delete "Apagar"

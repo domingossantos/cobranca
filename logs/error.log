@@ -195,3 +195,745 @@ Stack Trace:
 #17 {main}
 
 
+2016-06-04 17:33:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Exception Attributes: array (
+  'class' => 'Users',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /users
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-06-04 17:37:34 Error: Fatal Error (1): Class 'App\Model\Entity\DefaultPasswordHasher' not found in [/Users/domingossantos/git/cobranca/src/Model/Entity/User.php, line 38]
+Request URL: /users/edit/1
+Referer URL: http://localhost:8765/users/edit/1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-06-04 17:37:34 Error: [Cake\Error\FatalErrorException] Class 'App\Model\Entity\DefaultPasswordHasher' not found
+Request URL: /users/edit/1
+Referer URL: http://localhost:8765/users/edit/1
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Mode...', '/Users/domingos...', 38)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-06-04 17:39:44 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/login
+Referer URL: http://localhost:8765/usuarios/login
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-06-04 17:40:44 Error: [Cake\View\Exception\MissingTemplateException] Template file "Users/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/login.ctp',
+)
+Request URL: /users/login
+Referer URL: http://localhost:8765/usuarios/login
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-06-04 17:41:19 Error: [Cake\View\Exception\MissingTemplateException] Template file "Users/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/login.ctp',
+)
+Request URL: /users/login
+Referer URL: http://localhost:8765/usuarios/login
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-06-04 17:48:34 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cobranca.usuarios' doesn't exist
+Request URL: /usuarios
+Referer URL: http://localhost:8765/empresas
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'usuarios', Array, Object(Cake\Database\Schema\Table))
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(64): Cake\Database\Schema\Collection->describe('usuarios', Array)
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/Table.php(430): Cake\Database\Schema\CachedCollection->describe('usuarios')
+#3 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(211): Cake\ORM\Table->schema()
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\UsuariosTable))
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/Table.php(1243): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\UsuariosTable))
+#6 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/Table.php(946): Cake\ORM\Table->query()
+#7 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#8 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\UsuariosTable), Array)
+#9 /Users/domingossantos/git/cobranca/src/Controller/UsuariosController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\UsuariosTable))
+#10 [internal function]: App\Controller\UsuariosController->index()
+#11 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#12 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsuariosController))
+#14 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2016-06-04 17:52:37 Error: Fatal Error (4): syntax error, unexpected '?>' in [/Users/domingossantos/git/cobranca/src/Template/Users/index.ctp, line 11]
+Request URL: /users
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-06-04 17:52:37 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '?>'
+Request URL: /users
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/Users/domingos...', 11)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-06-04 18:00:16 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [/Users/domingossantos/git/cobranca/src/Template/Users/index.ctp, line 11]
+Request URL: /users
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-06-04 18:00:16 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /users
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/Users/domingos...', 11)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-06-04 18:18:46 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::mais() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'mais',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /empresas/mais
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-06-04 18:34:46 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/domingossantos/git/cobranca/src/Template/Produtos/add.ctp, line 21]
+Request URL: /produtos/add
+Referer URL: http://localhost:8765/produtos
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-06-04 18:34:46 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ';'
+Request URL: /produtos/add
+Referer URL: http://localhost:8765/produtos
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/Users/domingos...', 21)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-06-04 18:35:32 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/domingossantos/git/cobranca/src/Template/Produtos/add.ctp, line 21]
+Request URL: /produtos/add
+Referer URL: http://localhost:8765/produtos
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-06-04 18:35:32 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ';'
+Request URL: /produtos/add
+Referer URL: http://localhost:8765/produtos
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/Users/domingos...', 21)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-06-04 18:58:11 Error: Fatal Error (4): syntax error, unexpected ';' in [/Users/domingossantos/git/cobranca/src/Template/Users/login.ctp, line 55]
+Request URL: /users/login
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-06-04 18:58:11 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ';'
+Request URL: /users/login
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/Users/domingos...', 55)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-06-06 00:56:22 Warning: Warning (2): Illegal string offset 'sessao' in [/Users/domingossantos/git/cobranca/src/Controller/ProdutosController.php, line 29]
+Request URL: /produtos
+Referer URL: http://localhost:8765/empresas/main
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+App\Controller\ProdutosController::index() - APP/Controller/ProdutosController.php, line 29
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-06-06 00:58:17 Warning: Warning (2): Illegal string offset 'sessao' in [/Users/domingossantos/git/cobranca/src/Controller/ProdutosController.php, line 28]
+Request URL: /produtos
+Referer URL: http://localhost:8765/produtos
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+App\Controller\ProdutosController::index() - APP/Controller/ProdutosController.php, line 28
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-06-06 00:58:19 Warning: Warning (2): Illegal string offset 'sessao' in [/Users/domingossantos/git/cobranca/src/Controller/ProdutosController.php, line 28]
+Request URL: /produtos
+Referer URL: http://localhost:8765/produtos
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+App\Controller\ProdutosController::index() - APP/Controller/ProdutosController.php, line 28
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-06-06 01:09:34 Error: [Cake\View\Exception\MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => NULL,
+)
+Request URL: /produtos/add
+Referer URL: http://localhost:8765/produtos
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('Auth', NULL)
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/HelperRegistry.php(66): Cake\Core\ObjectRegistry->load('Auth')
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(888): Cake\View\HelperRegistry->__isset('Auth')
+#3 /Users/domingossantos/git/cobranca/src/Template/Produtos/add.ctp(19): Cake\View\View->__get('Auth')
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(992): include('/Users/domingos...')
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(952): Cake\View\View->_evaluate('/Users/domingos...', Array)
+#6 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(587): Cake\View\View->_render('/Users/domingos...')
+#7 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#8 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#9 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#10 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2016-06-06 01:11:22 Error: [Cake\View\Exception\MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => NULL,
+)
+Request URL: /produtos/add
+Referer URL: http://localhost:8765/produtos
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('Auth', NULL)
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/HelperRegistry.php(66): Cake\Core\ObjectRegistry->load('Auth')
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(888): Cake\View\HelperRegistry->__isset('Auth')
+#3 /Users/domingossantos/git/cobranca/src/Template/Produtos/add.ctp(19): Cake\View\View->__get('Auth')
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(992): include('/Users/domingos...')
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(952): Cake\View\View->_evaluate('/Users/domingos...', Array)
+#6 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(587): Cake\View\View->_render('/Users/domingos...')
+#7 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#8 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#9 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#10 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2016-06-06 01:12:08 Error: [Cake\View\Exception\MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => NULL,
+)
+Request URL: /produtos/add
+Referer URL: http://localhost:8765/produtos
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('Auth', NULL)
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/HelperRegistry.php(66): Cake\Core\ObjectRegistry->load('Auth')
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(888): Cake\View\HelperRegistry->__isset('Auth')
+#3 /Users/domingossantos/git/cobranca/src/Template/Produtos/add.ctp(19): Cake\View\View->__get('Auth')
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(992): include('/Users/domingos...')
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(952): Cake\View\View->_evaluate('/Users/domingos...', Array)
+#6 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(587): Cake\View\View->_render('/Users/domingos...')
+#7 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#8 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#9 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#10 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2016-06-06 01:12:09 Error: [Cake\View\Exception\MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => NULL,
+)
+Request URL: /produtos/add
+Referer URL: http://localhost:8765/produtos
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('Auth', NULL)
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/HelperRegistry.php(66): Cake\Core\ObjectRegistry->load('Auth')
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(888): Cake\View\HelperRegistry->__isset('Auth')
+#3 /Users/domingossantos/git/cobranca/src/Template/Produtos/add.ctp(19): Cake\View\View->__get('Auth')
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(992): include('/Users/domingos...')
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(952): Cake\View\View->_evaluate('/Users/domingos...', Array)
+#6 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(587): Cake\View\View->_render('/Users/domingos...')
+#7 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#8 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#9 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#10 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2016-06-06 01:18:36 Error: [Cake\View\Exception\MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => NULL,
+)
+Request URL: /produtos/add
+Referer URL: http://localhost:8765/produtos
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('Auth', NULL)
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/HelperRegistry.php(66): Cake\Core\ObjectRegistry->load('Auth')
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(888): Cake\View\HelperRegistry->__isset('Auth')
+#3 /Users/domingossantos/git/cobranca/src/Template/Produtos/add.ctp(15): Cake\View\View->__get('Auth')
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(992): include('/Users/domingos...')
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(952): Cake\View\View->_evaluate('/Users/domingos...', Array)
+#6 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(587): Cake\View\View->_render('/Users/domingos...')
+#7 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#8 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#9 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#10 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2016-06-06 01:19:06 Error: [Cake\View\Exception\MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => NULL,
+)
+Request URL: /produtos/add
+Referer URL: http://localhost:8765/produtos
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('Auth', NULL)
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/HelperRegistry.php(66): Cake\Core\ObjectRegistry->load('Auth')
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(888): Cake\View\HelperRegistry->__isset('Auth')
+#3 /Users/domingossantos/git/cobranca/src/Template/Produtos/add.ctp(15): Cake\View\View->__get('Auth')
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(992): include('/Users/domingos...')
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(952): Cake\View\View->_evaluate('/Users/domingos...', Array)
+#6 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(587): Cake\View\View->_render('/Users/domingos...')
+#7 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#8 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#9 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#10 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2016-06-06 01:19:14 Error: [Cake\View\Exception\MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => NULL,
+)
+Request URL: /produtos/add
+Referer URL: http://localhost:8765/produtos
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('Auth', NULL)
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/HelperRegistry.php(66): Cake\Core\ObjectRegistry->load('Auth')
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(888): Cake\View\HelperRegistry->__isset('Auth')
+#3 /Users/domingossantos/git/cobranca/src/Template/Produtos/add.ctp(15): Cake\View\View->__get('Auth')
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(992): include('/Users/domingos...')
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(952): Cake\View\View->_evaluate('/Users/domingos...', Array)
+#6 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(587): Cake\View\View->_render('/Users/domingos...')
+#7 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#8 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#9 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#10 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2016-06-06 01:19:21 Error: [Cake\Controller\Exception\MissingActionException] Action ProdutosController::{{url}}() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'ProdutosController',
+  'action' => '{{url}}',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /produtos/{{url}}
+Referer URL: http://localhost:8765/produtos/add
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#2 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-06-06 01:19:35 Error: [Cake\Controller\Exception\MissingActionException] Action ProdutosController::{{url}}() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'ProdutosController',
+  'action' => '{{url}}',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /produtos/{{url}}
+Referer URL: http://localhost:8765/produtos/add
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#2 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-06-06 01:19:38 Error: [Cake\Controller\Exception\MissingActionException] Action ProdutosController::{{url}}() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'ProdutosController',
+  'action' => '{{url}}',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /produtos/{{url}}
+Referer URL: http://localhost:8765/produtos/add
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#2 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-06-06 01:20:55 Error: [Cake\View\Exception\MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => NULL,
+)
+Request URL: /produtos/add
+Referer URL: http://localhost:8765/produtos
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('Auth', NULL)
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/HelperRegistry.php(66): Cake\Core\ObjectRegistry->load('Auth')
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(888): Cake\View\HelperRegistry->__isset('Auth')
+#3 /Users/domingossantos/git/cobranca/src/Template/Produtos/add.ctp(15): Cake\View\View->__get('Auth')
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(992): include('/Users/domingos...')
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(952): Cake\View\View->_evaluate('/Users/domingos...', Array)
+#6 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(587): Cake\View\View->_render('/Users/domingos...')
+#7 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#8 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#9 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#10 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2016-06-06 01:21:20 Error: [Cake\View\Exception\MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => NULL,
+)
+Request URL: /produtos/add
+Referer URL: http://localhost:8765/produtos
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('Auth', NULL)
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/HelperRegistry.php(66): Cake\Core\ObjectRegistry->load('Auth')
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(888): Cake\View\HelperRegistry->__isset('Auth')
+#3 /Users/domingossantos/git/cobranca/src/Template/Produtos/add.ctp(15): Cake\View\View->__get('Auth')
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(992): include('/Users/domingos...')
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(952): Cake\View\View->_evaluate('/Users/domingos...', Array)
+#6 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(587): Cake\View\View->_render('/Users/domingos...')
+#7 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#8 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#9 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#10 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2016-06-06 01:21:44 Error: [Cake\View\Exception\MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => NULL,
+)
+Request URL: /produtos/add
+Referer URL: http://localhost:8765/produtos
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('Auth', NULL)
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/HelperRegistry.php(66): Cake\Core\ObjectRegistry->load('Auth')
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(888): Cake\View\HelperRegistry->__isset('Auth')
+#3 /Users/domingossantos/git/cobranca/src/Template/Produtos/add.ctp(15): Cake\View\View->__get('Auth')
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(992): include('/Users/domingos...')
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(952): Cake\View\View->_evaluate('/Users/domingos...', Array)
+#6 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(587): Cake\View\View->_render('/Users/domingos...')
+#7 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#8 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#9 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#10 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2016-06-06 01:21:54 Error: [Cake\View\Exception\MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => NULL,
+)
+Request URL: /produtos/add
+Referer URL: http://localhost:8765/produtos
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('Auth', NULL)
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/HelperRegistry.php(66): Cake\Core\ObjectRegistry->load('Auth')
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(888): Cake\View\HelperRegistry->__isset('Auth')
+#3 /Users/domingossantos/git/cobranca/src/Template/Produtos/add.ctp(15): Cake\View\View->__get('Auth')
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(992): include('/Users/domingos...')
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(952): Cake\View\View->_evaluate('/Users/domingos...', Array)
+#6 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(587): Cake\View\View->_render('/Users/domingos...')
+#7 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#8 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#9 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#10 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2016-06-06 01:22:20 Error: [Cake\View\Exception\MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => NULL,
+)
+Request URL: /produtos/add
+Referer URL: http://localhost:8765/produtos
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('Auth', NULL)
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/HelperRegistry.php(66): Cake\Core\ObjectRegistry->load('Auth')
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(888): Cake\View\HelperRegistry->__isset('Auth')
+#3 /Users/domingossantos/git/cobranca/src/Template/Produtos/add.ctp(15): Cake\View\View->__get('Auth')
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(992): include('/Users/domingos...')
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(952): Cake\View\View->_evaluate('/Users/domingos...', Array)
+#6 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(587): Cake\View\View->_render('/Users/domingos...')
+#7 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#8 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#9 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#10 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2016-06-06 01:22:20 Error: [Cake\View\Exception\MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => NULL,
+)
+Request URL: /produtos/add
+Referer URL: http://localhost:8765/produtos
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('Auth', NULL)
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/HelperRegistry.php(66): Cake\Core\ObjectRegistry->load('Auth')
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(888): Cake\View\HelperRegistry->__isset('Auth')
+#3 /Users/domingossantos/git/cobranca/src/Template/Produtos/add.ctp(15): Cake\View\View->__get('Auth')
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(992): include('/Users/domingos...')
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(952): Cake\View\View->_evaluate('/Users/domingos...', Array)
+#6 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(587): Cake\View\View->_render('/Users/domingos...')
+#7 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#8 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#9 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#10 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2016-06-06 01:22:33 Error: [Cake\View\Exception\MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => NULL,
+)
+Request URL: /produtos/add
+Referer URL: http://localhost:8765/produtos/
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('Auth', NULL)
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/HelperRegistry.php(66): Cake\Core\ObjectRegistry->load('Auth')
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(888): Cake\View\HelperRegistry->__isset('Auth')
+#3 /Users/domingossantos/git/cobranca/src/Template/Produtos/add.ctp(15): Cake\View\View->__get('Auth')
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(992): include('/Users/domingos...')
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(952): Cake\View\View->_evaluate('/Users/domingos...', Array)
+#6 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(587): Cake\View\View->_render('/Users/domingos...')
+#7 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#8 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#9 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#10 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2016-06-06 01:22:44 Error: [Cake\View\Exception\MissingHelperException] Helper class authHelper could not be found.
+Exception Attributes: array (
+  'class' => 'authHelper',
+  'plugin' => NULL,
+)
+Request URL: /produtos/add
+Referer URL: http://localhost:8765/produtos/
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('auth', NULL)
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/HelperRegistry.php(66): Cake\Core\ObjectRegistry->load('auth')
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(888): Cake\View\HelperRegistry->__isset('auth')
+#3 /Users/domingossantos/git/cobranca/src/Template/Produtos/add.ctp(15): Cake\View\View->__get('auth')
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(992): include('/Users/domingos...')
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(952): Cake\View\View->_evaluate('/Users/domingos...', Array)
+#6 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(587): Cake\View\View->_render('/Users/domingos...')
+#7 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#8 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#9 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#10 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2016-06-06 01:23:25 Error: [Cake\View\Exception\MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => NULL,
+)
+Request URL: /produtos/add
+Referer URL: http://localhost:8765/produtos/
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('Auth', NULL)
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/HelperRegistry.php(66): Cake\Core\ObjectRegistry->load('Auth')
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(888): Cake\View\HelperRegistry->__isset('Auth')
+#3 /Users/domingossantos/git/cobranca/src/Template/Produtos/add.ctp(15): Cake\View\View->__get('Auth')
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(992): include('/Users/domingos...')
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(952): Cake\View\View->_evaluate('/Users/domingos...', Array)
+#6 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(587): Cake\View\View->_render('/Users/domingos...')
+#7 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#8 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#9 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#10 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2016-06-06 01:29:09 Error: [InvalidArgumentException] Empresas is not associated with Usuarios
+Request URL: /empresas/view/1
+Referer URL: http://localhost:8765/produtos/view/3
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(252): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\EmpresasTable), 'Usuarios', Array, Array)
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(377): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\EmpresasTable))
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(348): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\EmpresasTable))
+#3 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(947): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\EmpresasTable), true)
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(901): Cake\ORM\Query->_transformQuery()
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(121): Cake\ORM\Query->sql()
+#6 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Database/Connection.php(218): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Database/Connection.php(270): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Database/Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(921): Cake\Database\Query->execute()
+#10 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(272): Cake\ORM\Query->_execute()
+#11 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(871): Cake\ORM\Query->_all()
+#12 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(395): Cake\ORM\Query->all()
+#13 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(406): Cake\ORM\Query->first()
+#14 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/Table.php(1202): Cake\ORM\Query->firstOrFail()
+#15 /Users/domingossantos/git/cobranca/src/Controller/EmpresasController.php(38): Cake\ORM\Table->get('1', Array)
+#16 [internal function]: App\Controller\EmpresasController->view('1')
+#17 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#18 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#19 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#20 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#21 {main}
+
+
+2016-06-06 01:29:17 Error: [InvalidArgumentException] Empresas is not associated with Usuarios
+Request URL: /empresas/view/1
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(252): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\EmpresasTable), 'Usuarios', Array, Array)
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(377): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\EmpresasTable))
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(348): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\EmpresasTable))
+#3 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(947): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\EmpresasTable), true)
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(901): Cake\ORM\Query->_transformQuery()
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(121): Cake\ORM\Query->sql()
+#6 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Database/Connection.php(218): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Database/Connection.php(270): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Database/Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(921): Cake\Database\Query->execute()
+#10 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(272): Cake\ORM\Query->_execute()
+#11 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(871): Cake\ORM\Query->_all()
+#12 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(395): Cake\ORM\Query->all()
+#13 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(406): Cake\ORM\Query->first()
+#14 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/Table.php(1202): Cake\ORM\Query->firstOrFail()
+#15 /Users/domingossantos/git/cobranca/src/Controller/EmpresasController.php(38): Cake\ORM\Table->get('1', Array)
+#16 [internal function]: App\Controller\EmpresasController->view('1')
+#17 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#18 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#19 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#20 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#21 {main}
+
+
+2016-06-06 01:29:30 Error: [InvalidArgumentException] Empresas is not associated with Usuarios
+Request URL: /empresas/view/1
+Referer URL: http://localhost:8765/produtos/view/3
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(252): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\EmpresasTable), 'Usuarios', Array, Array)
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(377): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\EmpresasTable))
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(348): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\EmpresasTable))
+#3 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(947): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\EmpresasTable), true)
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(901): Cake\ORM\Query->_transformQuery()
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(121): Cake\ORM\Query->sql()
+#6 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Database/Connection.php(218): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Database/Connection.php(270): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Database/Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(921): Cake\Database\Query->execute()
+#10 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(272): Cake\ORM\Query->_execute()
+#11 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/Query.php(871): Cake\ORM\Query->_all()
+#12 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(395): Cake\ORM\Query->all()
+#13 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(406): Cake\ORM\Query->first()
+#14 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/ORM/Table.php(1202): Cake\ORM\Query->firstOrFail()
+#15 /Users/domingossantos/git/cobranca/src/Controller/EmpresasController.php(38): Cake\ORM\Table->get('1', Array)
+#16 [internal function]: App\Controller\EmpresasController->view('1')
+#17 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#18 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#19 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#20 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#21 {main}
+
+
+2016-06-06 01:29:51 Error: [Cake\Controller\Exception\MissingActionException] Action EmpresasController::main() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EmpresasController',
+  'action' => 'main',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /empresas/main
+Referer URL: http://localhost:8765/produtos
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EmpresasController))
+#2 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+

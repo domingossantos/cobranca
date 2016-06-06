@@ -19,10 +19,14 @@ class ProdutosControllerTest extends IntegrationTestCase
         'app.produtos',
         'app.empresas',
         'app.bancos_contas',
+        'app.bancos',
         'app.clientes',
         'app.contrato_cliente',
-        'app.usuarios',
-        'app.contratos'
+        'app.contratos',
+        'app.crons',
+        'app.cobrancas',
+        'app.banco_contas',
+        'app.users'
     ];
 
     /**

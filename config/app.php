@@ -39,7 +39,7 @@ return [
     'App' => [
         'namespace' => 'App',
         'encoding' => env('APP_ENCODING', 'UTF-8'),
-        'defaultLocale' => env('APP_DEFAULT_LOCALE', 'en_US'),
+        'defaultLocale' => env('APP_DEFAULT_LOCALE', 'pt_BR'),
         'base' => false,
         'dir' => 'src',
         'webroot' => 'webroot',
@@ -225,7 +225,7 @@ return [
              * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
              * the following line and set the port accordingly
              */
-            //'port' => 'non_standard_port_number',
+            'port' => '3307',
             'username' => 'root',
             'password' => 'passwd',
             'database' => 'cobranca',
@@ -253,7 +253,7 @@ return [
              * which is the recommended value in production environments
              */
             //'init' => ['SET GLOBAL innodb_stats_on_metadata = 0'],
-            
+
             'url' => env('DATABASE_URL', null),
         ],
 

@@ -19,9 +19,13 @@ class ProdutosController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Empresas']
+            'contain' => ['Empresas'],
+            'conditions' => ['Produtos.empresa_id' => $this->Auth->user('empresa_id')]
         ];
+
         $produtos = $this->paginate($this->Produtos);
+
+
 
         $this->set(compact('produtos'));
         $this->set('_serialize', ['produtos']);

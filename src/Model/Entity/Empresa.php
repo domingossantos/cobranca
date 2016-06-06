@@ -14,12 +14,13 @@ use Cake\ORM\Entity;
  * @property string $site
  * @property string $fone
  * @property string $email
- * @property \Cake\I18n\Time $data_cadastro
  * @property string $status
+ * @property \Cake\I18n\Time $created
+ * @property \Cake\I18n\Time $modified
  * @property \App\Model\Entity\BancosConta[] $bancos_contas
  * @property \App\Model\Entity\Cliente[] $clientes
  * @property \App\Model\Entity\Produto[] $produtos
- * @property \App\Model\Entity\Usuario[] $usuarios
+ * @property \App\Model\Entity\User[] $users
  */
 class Empresa extends Entity
 {

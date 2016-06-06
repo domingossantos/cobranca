@@ -30,6 +30,8 @@ class ProdutosTable extends Table
         $this->displayField('id');
         $this->primaryKey('id');
 
+        $this->addBehavior('Timestamp');
+
         $this->belongsTo('Empresas', [
             'foreignKey' => 'empresa_id'
         ]);
@@ -55,10 +57,6 @@ class ProdutosTable extends Table
 
         $validator
             ->allowEmpty('descricao');
-
-        $validator
-            ->dateTime('data_cadastro')
-            ->allowEmpty('data_cadastro');
 
         $validator
             ->allowEmpty('status');

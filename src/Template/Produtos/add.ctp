@@ -11,13 +11,12 @@
 <div class="produtos form large-9 medium-8 columns content">
     <?= $this->Form->create($produto) ?>
     <fieldset>
-        <legend><?= __('Add Produto') ?></legend>
+        <legend><?= __('Novo Produto') ?></legend>
         <?php
             echo $this->Form->input('nome');
-            echo $this->Form->input('descricao');
-            echo $this->Form->input('data_cadastro', ['empty' => true]);
+            echo $this->Form->input('descricao', ['label' => 'Descrição']);
             echo $this->Form->input('status');
-            echo $this->Form->input('empresa_id', ['options' => $empresas, 'empty' => true]);
+            echo $this->Form->input('empresa_id', ['type'=>'hidden', 'value'=> $this->request->session()->read('Auth.User.empresa_id') ]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

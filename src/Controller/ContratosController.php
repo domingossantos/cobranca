@@ -16,11 +16,14 @@ class ContratosController extends AppController
      *
      * @return \Cake\Network\Response|null
      */
-    public function index()
+    public function index($id = null)
     {
         $this->paginate = [
-            'contain' => ['Produtos']
+            'contain' => ['Produtos'],
+            'conditions' => ['Contratos.produto_id' => $id]
         ];
+
+
         $contratos = $this->paginate($this->Contratos);
 
         $this->set(compact('contratos'));

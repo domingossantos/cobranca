@@ -13,7 +13,7 @@ use Cake\Validation\Validator;
  * @property \Cake\ORM\Association\HasMany $BancosContas
  * @property \Cake\ORM\Association\HasMany $Clientes
  * @property \Cake\ORM\Association\HasMany $Produtos
- * @property \Cake\ORM\Association\HasMany $Usuarios
+ * @property \Cake\ORM\Association\HasMany $Users
  */
 class EmpresasTable extends Table
 {
@@ -32,6 +32,8 @@ class EmpresasTable extends Table
         $this->displayField('id');
         $this->primaryKey('id');
 
+        $this->addBehavior('Timestamp');
+
         $this->hasMany('BancosContas', [
             'foreignKey' => 'empresa_id'
         ]);
@@ -41,7 +43,7 @@ class EmpresasTable extends Table
         $this->hasMany('Produtos', [
             'foreignKey' => 'empresa_id'
         ]);
-        $this->hasMany('Usuarios', [
+        $this->hasMany('Users', [
             'foreignKey' => 'empresa_id'
         ]);
     }
@@ -80,10 +82,6 @@ class EmpresasTable extends Table
         $validator
             ->email('email')
             ->allowEmpty('email');
-
-        $validator
-            ->dateTime('data_cadastro')
-            ->allowEmpty('data_cadastro');
 
         $validator
             ->allowEmpty('status');

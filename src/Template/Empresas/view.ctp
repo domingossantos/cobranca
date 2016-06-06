@@ -11,8 +11,8 @@
         <li><?= $this->Html->link(__('New Cliente'), ['controller' => 'Clientes', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Produtos'), ['controller' => 'Produtos', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Produto'), ['controller' => 'Produtos', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Usuarios'), ['controller' => 'Usuarios', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Usuario'), ['controller' => 'Usuarios', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?> </li>
     </ul>
 </nav>
 <div class="empresas view large-9 medium-8 columns content">
@@ -55,8 +55,12 @@
             <td><?= $this->Number->format($empresa->id) ?></td>
         </tr>
         <tr>
-            <th><?= __('Data Cadastro') ?></th>
-            <td><?= h($empresa->data_cadastro) ?></td>
+            <th><?= __('Created') ?></th>
+            <td><?= h($empresa->created) ?></td>
+        </tr>
+        <tr>
+            <th><?= __('Modified') ?></th>
+            <td><?= h($empresa->modified) ?></td>
         </tr>
     </table>
     <div class="related">
@@ -70,9 +74,10 @@
                 <th><?= __('Ag Conta') ?></th>
                 <th><?= __('Contrato') ?></th>
                 <th><?= __('Convenio') ?></th>
-                <th><?= __('Data Cadastro') ?></th>
                 <th><?= __('Status') ?></th>
                 <th><?= __('Empresa Id') ?></th>
+                <th><?= __('Created') ?></th>
+                <th><?= __('Modified') ?></th>
                 <th class="actions"><?= __('Actions') ?></th>
             </tr>
             <?php foreach ($empresa->bancos_contas as $bancosContas): ?>
@@ -83,9 +88,10 @@
                 <td><?= h($bancosContas->ag_conta) ?></td>
                 <td><?= h($bancosContas->contrato) ?></td>
                 <td><?= h($bancosContas->convenio) ?></td>
-                <td><?= h($bancosContas->data_cadastro) ?></td>
                 <td><?= h($bancosContas->status) ?></td>
                 <td><?= h($bancosContas->empresa_id) ?></td>
+                <td><?= h($bancosContas->created) ?></td>
+                <td><?= h($bancosContas->modified) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['controller' => 'BancosContas', 'action' => 'view', $bancosContas->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['controller' => 'BancosContas', 'action' => 'edit', $bancosContas->id]) ?>
@@ -108,8 +114,9 @@
                 <th><?= __('Email') ?></th>
                 <th><?= __('Endereco') ?></th>
                 <th><?= __('Empresa Id') ?></th>
-                <th><?= __('Data Cadastro') ?></th>
                 <th><?= __('Status') ?></th>
+                <th><?= __('Created') ?></th>
+                <th><?= __('Modified') ?></th>
                 <th class="actions"><?= __('Actions') ?></th>
             </tr>
             <?php foreach ($empresa->clientes as $clientes): ?>
@@ -121,8 +128,9 @@
                 <td><?= h($clientes->email) ?></td>
                 <td><?= h($clientes->endereco) ?></td>
                 <td><?= h($clientes->empresa_id) ?></td>
-                <td><?= h($clientes->data_cadastro) ?></td>
                 <td><?= h($clientes->status) ?></td>
+                <td><?= h($clientes->created) ?></td>
+                <td><?= h($clientes->modified) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['controller' => 'Clientes', 'action' => 'view', $clientes->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['controller' => 'Clientes', 'action' => 'edit', $clientes->id]) ?>
@@ -141,9 +149,10 @@
                 <th><?= __('Id') ?></th>
                 <th><?= __('Nome') ?></th>
                 <th><?= __('Descricao') ?></th>
-                <th><?= __('Data Cadastro') ?></th>
                 <th><?= __('Status') ?></th>
                 <th><?= __('Empresa Id') ?></th>
+                <th><?= __('Created') ?></th>
+                <th><?= __('Modified') ?></th>
                 <th class="actions"><?= __('Actions') ?></th>
             </tr>
             <?php foreach ($empresa->produtos as $produtos): ?>
@@ -151,9 +160,10 @@
                 <td><?= h($produtos->id) ?></td>
                 <td><?= h($produtos->nome) ?></td>
                 <td><?= h($produtos->descricao) ?></td>
-                <td><?= h($produtos->data_cadastro) ?></td>
                 <td><?= h($produtos->status) ?></td>
                 <td><?= h($produtos->empresa_id) ?></td>
+                <td><?= h($produtos->created) ?></td>
+                <td><?= h($produtos->modified) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['controller' => 'Produtos', 'action' => 'view', $produtos->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['controller' => 'Produtos', 'action' => 'edit', $produtos->id]) ?>
@@ -165,32 +175,34 @@
         <?php endif; ?>
     </div>
     <div class="related">
-        <h4><?= __('Related Usuarios') ?></h4>
-        <?php if (!empty($empresa->usuarios)): ?>
+        <h4><?= __('Related Users') ?></h4>
+        <?php if (!empty($empresa->users)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
                 <th><?= __('Id') ?></th>
                 <th><?= __('Nome') ?></th>
                 <th><?= __('Email') ?></th>
                 <th><?= __('Senha') ?></th>
-                <th><?= __('Data Cadastro') ?></th>
                 <th><?= __('Status') ?></th>
                 <th><?= __('Empresa Id') ?></th>
+                <th><?= __('Created') ?></th>
+                <th><?= __('Modified') ?></th>
                 <th class="actions"><?= __('Actions') ?></th>
             </tr>
-            <?php foreach ($empresa->usuarios as $usuarios): ?>
+            <?php foreach ($empresa->users as $users): ?>
             <tr>
-                <td><?= h($usuarios->id) ?></td>
-                <td><?= h($usuarios->nome) ?></td>
-                <td><?= h($usuarios->email) ?></td>
-                <td><?= h($usuarios->senha) ?></td>
-                <td><?= h($usuarios->data_cadastro) ?></td>
-                <td><?= h($usuarios->status) ?></td>
-                <td><?= h($usuarios->empresa_id) ?></td>
+                <td><?= h($users->id) ?></td>
+                <td><?= h($users->nome) ?></td>
+                <td><?= h($users->email) ?></td>
+                <td><?= h($users->senha) ?></td>
+                <td><?= h($users->status) ?></td>
+                <td><?= h($users->empresa_id) ?></td>
+                <td><?= h($users->created) ?></td>
+                <td><?= h($users->modified) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'Usuarios', 'action' => 'view', $usuarios->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'Usuarios', 'action' => 'edit', $usuarios->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Usuarios', 'action' => 'delete', $usuarios->id], ['confirm' => __('Are you sure you want to delete # {0}?', $usuarios->id)]) ?>
+                    <?= $this->Html->link(__('View'), ['controller' => 'Users', 'action' => 'view', $users->id]) ?>
+                    <?= $this->Html->link(__('Edit'), ['controller' => 'Users', 'action' => 'edit', $users->id]) ?>
+                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Users', 'action' => 'delete', $users->id], ['confirm' => __('Are you sure you want to delete # {0}?', $users->id)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>

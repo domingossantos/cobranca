@@ -21,9 +21,8 @@
         <?php
             echo $this->Form->input('nome');
             echo $this->Form->input('descricao');
-            echo $this->Form->input('data_cadastro', ['empty' => true]);
             echo $this->Form->input('status');
-            echo $this->Form->input('empresa_id', ['options' => $empresas, 'empty' => true]);
+
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

@@ -25,8 +25,9 @@ class EmpresasFixture extends TestFixture
         'site' => ['type' => 'string', 'length' => 50, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'fone' => ['type' => 'string', 'length' => 20, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'email' => ['type' => 'string', 'length' => 50, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
-        'data_cadastro' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
         'status' => ['type' => 'string', 'fixed' => true, 'length' => 1, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
+        'created' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
+        'modified' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
         ],
@@ -52,8 +53,9 @@ class EmpresasFixture extends TestFixture
             'site' => 'Lorem ipsum dolor sit amet',
             'fone' => 'Lorem ipsum dolor ',
             'email' => 'Lorem ipsum dolor sit amet',
-            'data_cadastro' => '2016-06-01 01:36:39',
-            'status' => 'Lorem ipsum dolor sit ame'
+            'status' => 'Lorem ipsum dolor sit ame',
+            'created' => '2016-06-06 01:29:41',
+            'modified' => '2016-06-06 01:29:41'
         ],
     ];
 }

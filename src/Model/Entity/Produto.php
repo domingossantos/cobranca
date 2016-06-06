@@ -9,10 +9,11 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property string $nome
  * @property string $descricao
- * @property \Cake\I18n\Time $data_cadastro
  * @property string $status
  * @property int $empresa_id
  * @property \App\Model\Entity\Empresa $empresa
+ * @property \Cake\I18n\Time $created
+ * @property \Cake\I18n\Time $modified
  * @property \App\Model\Entity\Contrato[] $contratos
  */
 class Produto extends Entity

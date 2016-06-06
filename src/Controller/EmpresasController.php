@@ -34,7 +34,7 @@ class EmpresasController extends AppController
     public function view($id = null)
     {
         $empresa = $this->Empresas->get($id, [
-            'contain' => ['BancosContas', 'Clientes', 'Produtos', 'Usuarios']
+            'contain' => ['BancosContas', 'Clientes', 'Produtos', 'Users']
         ]);
 
         $this->set('empresa', $empresa);
@@ -104,5 +104,9 @@ class EmpresasController extends AppController
             $this->Flash->error(__('The empresa could not be deleted. Please, try again.'));
         }
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function main(){
+      
     }
 }
