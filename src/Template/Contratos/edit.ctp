@@ -23,9 +23,7 @@
         <?php
             echo $this->Form->input('nome');
             echo $this->Form->input('path_arquivo');
-            echo $this->Form->input('data_cadastro', ['empty' => true]);
             echo $this->Form->input('status');
-            echo $this->Form->input('produto_id', ['options' => $produtos, 'empty' => true]);
             echo $this->Form->input('valor_total');
             echo $this->Form->input('valor_parcela');
             echo $this->Form->input('valor_mora');

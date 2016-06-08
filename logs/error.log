@@ -937,3 +937,246 @@ Stack Trace:
 #3 {main}
 
 
+2016-06-07 11:45:29 Error: Fatal Error (1): Call to a member function get() on boolean in [/Users/domingossantos/git/cobranca/src/Controller/ContratosController.php, line 26]
+Request URL: /contratos/index/1
+Referer URL: http://localhost:8765/produtos
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-06-07 11:45:29 Error: [Cake\Error\FatalErrorException] Call to a member function get() on boolean
+Request URL: /contratos/index/1
+Referer URL: http://localhost:8765/produtos
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Users/domingos...', 26)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-06-07 23:25:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class AppleTouchIconPrecomposed.png could not be found.
+Exception Attributes: array (
+  'class' => 'AppleTouchIconPrecomposed.png',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /apple-touch-icon-precomposed.png
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-06-07 23:25:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class AppleTouchIcon.png could not be found.
+Exception Attributes: array (
+  'class' => 'AppleTouchIcon.png',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /apple-touch-icon.png
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-06-07 23:28:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Login could not be found.
+Exception Attributes: array (
+  'class' => 'Login',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /login
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-06-07 23:28:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Login could not be found.
+Exception Attributes: array (
+  'class' => 'Login',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /login
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-06-07 23:28:50 Error: Fatal Error (1): Call to a member function get() on boolean in [/Users/domingossantos/git/cobranca/src/Controller/ContratosController.php, line 26]
+Request URL: /contratos
+Referer URL: http://localhost:8765/produtos
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-06-07 23:28:50 Error: [Cake\Error\FatalErrorException] Call to a member function get() on boolean
+Request URL: /contratos
+Referer URL: http://localhost:8765/produtos
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Users/domingos...', 26)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-06-07 23:29:09 Error: Fatal Error (1): Call to a member function get() on boolean in [/Users/domingossantos/git/cobranca/src/Controller/ContratosController.php, line 26]
+Request URL: /contratos/index/1
+Referer URL: http://localhost:8765/produtos
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-06-07 23:29:09 Error: [Cake\Error\FatalErrorException] Call to a member function get() on boolean
+Request URL: /contratos/index/1
+Referer URL: http://localhost:8765/produtos
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Users/domingos...', 26)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-06-07 23:48:30 Error: Fatal Error (1): Call to undefined method App\Controller\ContratosController::loadMModel() in [/Users/domingossantos/git/cobranca/src/Controller/ContratosController.php, line 25]
+Request URL: /contratos/index/1
+Referer URL: http://localhost:8765/produtos
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-06-07 23:48:30 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\ContratosController::loadMModel()
+Request URL: /contratos/index/1
+Referer URL: http://localhost:8765/produtos
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/Users/domingos...', 25)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-06-08 00:02:55 Error: [Cake\View\Exception\MissingHelperException] Helper class produtoHelper could not be found.
+Exception Attributes: array (
+  'class' => 'produtoHelper',
+  'plugin' => NULL,
+)
+Request URL: /contratos/index/1
+Referer URL: http://localhost:8765/produtos
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('produto', NULL)
+#1 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/HelperRegistry.php(66): Cake\Core\ObjectRegistry->load('produto')
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(888): Cake\View\HelperRegistry->__isset('produto')
+#3 /Users/domingossantos/git/cobranca/src/Template/Contratos/index.ctp(4): Cake\View\View->__get('produto')
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(992): include('/Users/domingos...')
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(952): Cake\View\View->_evaluate('/Users/domingos...', Array)
+#6 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/View/View.php(587): Cake\View\View->_render('/Users/domingos...')
+#7 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#8 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#9 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ContratosController))
+#10 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2016-06-08 00:09:57 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "produtos" with primary key [NULL]
+Request URL: /contratos
+Referer URL: http://localhost:8765/contratos/add/1
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/src/Controller/ContratosController.php(26): Cake\ORM\Table->get(NULL)
+#1 [internal function]: App\Controller\ContratosController->index()
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#3 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ContratosController))
+#5 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-06-08 00:11:03 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "produtos" with primary key [NULL]
+Request URL: /contratos
+Referer URL: http://localhost:8765/contratos/index/1
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/src/Controller/ContratosController.php(26): Cake\ORM\Table->get(NULL)
+#1 [internal function]: App\Controller\ContratosController->index()
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#3 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ContratosController))
+#5 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-06-08 00:20:33 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "produtos" with primary key [NULL]
+Request URL: /contratos
+Referer URL: http://localhost:8765/contratos/edit/2
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/src/Controller/ContratosController.php(26): Cake\ORM\Table->get(NULL)
+#1 [internal function]: App\Controller\ContratosController->index()
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#3 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ContratosController))
+#5 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-06-08 00:20:38 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "produtos" with primary key [NULL]
+Request URL: /contratos
+Referer URL: http://localhost:8765/contratos/edit/2
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/src/Controller/ContratosController.php(26): Cake\ORM\Table->get(NULL)
+#1 [internal function]: App\Controller\ContratosController->index()
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#3 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ContratosController))
+#5 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-06-08 00:22:24 Error: [InvalidArgumentException] Unknown status code
+Request URL: /contratos/edit/2
+Referer URL: http://localhost:8765/contratos/edit/2
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(534): Cake\Network\Response->statusCode(1)
+#1 /Users/domingossantos/git/cobranca/src/Controller/ContratosController.php(91): Cake\Controller\Controller->redirect(Array, 1)
+#2 [internal function]: App\Controller\ContratosController->edit('2')
+#3 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ContratosController))
+#6 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-06-08 00:26:23 Error: [InvalidArgumentException] Unknown status code
+Request URL: /contratos/edit/2
+Referer URL: http://localhost:8765/contratos/edit/2
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(534): Cake\Network\Response->statusCode(1)
+#1 /Users/domingossantos/git/cobranca/src/Controller/ContratosController.php(91): Cake\Controller\Controller->redirect(Array, 1)
+#2 [internal function]: App\Controller\ContratosController->edit('2')
+#3 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ContratosController))
+#6 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-06-08 00:29:10 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "produtos" with primary key [NULL]
+Request URL: /contratos
+Referer URL: http://localhost:8765/produtos
+Stack Trace:
+#0 /Users/domingossantos/git/cobranca/src/Controller/ContratosController.php(26): Cake\ORM\Table->get(NULL)
+#1 [internal function]: App\Controller\ContratosController->index()
+#2 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#3 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 /Users/domingossantos/git/cobranca/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ContratosController))
+#5 /Users/domingossantos/git/cobranca/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
